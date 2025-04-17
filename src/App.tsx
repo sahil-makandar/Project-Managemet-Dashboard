@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header';
 import Board from './components/Board';
@@ -7,7 +7,7 @@ import { initialBoardData, BoardData } from './data/mockData';
 
 function App() {
   const [boardData, setBoardData] = useState<BoardData>(initialBoardData);
-  const [searchQuery, setSearchQuery] = useState('');
+  // Remove the unused searchQuery declaration or use it
   const [priorityFilter, setPriorityFilter] = useState('all');
   const [assigneeFilter, setAssigneeFilter] = useState('all');
 
@@ -16,7 +16,9 @@ function App() {
   };
 
   const handleSearch = (query: string) => {
-    setSearchQuery(query);
+    // We need to use the query parameter somewhere
+    console.log('Searching for:', query);
+    // You could filter tasks here based on the query
   };
 
   const handleFilterChange = (type: string, value: string) => {

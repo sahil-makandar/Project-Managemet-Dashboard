@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Task, User, users } from '../data/mockData';
+import { Task, users } from '../data/mockData'; // Remove User
 import { format } from 'date-fns';
 
 interface TaskModalProps {

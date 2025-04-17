@@ -13,7 +13,7 @@ import { arrayMove } from '@dnd-kit/sortable';
 import Column from './Column';
 import TaskCard from './TaskCard';
 import TaskModal from './TaskModal';
-import { BoardData, Task, User, users } from '../data/mockData';
+import { BoardData, Task } from '../data/mockData'; // Remove User and users
 import { format } from 'date-fns';
 import TaskDetails from './TaskDetails';
 
